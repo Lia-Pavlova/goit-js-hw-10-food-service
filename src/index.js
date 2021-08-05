@@ -6,8 +6,8 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-const itemsList = document.querySelector('ul.js-menu');
-const menuItems = items.map(itemTemplate).join('');
+const itemsList = document.querySelector('.js-menu');
+const menuItems = itemTemplate(items);
 itemsList.innerHTML = menuItems;
 const theme = localStorage.getItem('theme');
 const themeToggle = document.querySelector('#theme-switch-toggle');
