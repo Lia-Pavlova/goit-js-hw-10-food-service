@@ -6,7 +6,7 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-const itemsList = document.querySelector('.js-menu');
+const itemsList = document.querySelector('ul.js-menu');
 const menuItems = items.map(itemTemplate).join('');
 itemsList.innerHTML = menuItems;
 const theme = localStorage.getItem('theme');
